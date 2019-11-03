@@ -5,6 +5,7 @@ import torch
 from PIL import Image
 
 class LiNet():
+    #create private members of the class
     imgfile = ""
     img =[]
     classfyname = ""
