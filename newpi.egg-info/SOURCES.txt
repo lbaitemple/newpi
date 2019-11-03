@@ -1,0 +1,7 @@
+setup.py
+newpi.egg-info/PKG-INFO
+newpi.egg-info/SOURCES.txt
+newpi.egg-info/dependency_links.txt
+newpi.egg-info/top_level.txt
+talkback/__init__.py
+talkback/nnet.py
