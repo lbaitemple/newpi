@@ -2,6 +2,7 @@ import pkg_resources
 from torchvision  import models
 from torchvision import transforms
 import torch
+import cv2
 from PIL import Image
 
 class LiNet():
@@ -34,6 +35,11 @@ class LiNet():
 
     def setImage(self, img):
         self.img = img
+
+    def setCV2Image(self, img):
+        img_t = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        img_t = Image.fromarray(img_t)
+        self.img = img_t
 
     def eval(self):
         img_t = self.transform(self.img)

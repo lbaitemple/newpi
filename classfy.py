@@ -31,4 +31,6 @@ percentage = torch.nn.functional.softmax(out, dim=1)[0] * 100
 
 
 _, indices = torch.sort(out, descending=True)
-[print(labels[idx], percentage[idx].item()) for idx in indices[0][:5]]
+for idx in indices[0][:5]:
+ print(labels[idx], percentage[idx].item())
+#[print(labels[idx], percentage[idx].item()) for idx in indices[0][:5]]
