@@ -24,6 +24,7 @@ class LiNet():
 
     def __init__(self, fname="dog.jpg"):
         self.imgfile=fname
+        self.setfileName(fname)
         labelfile = pkg_resources.resource_filename('talkback', 'data/imagenet_classes.txt')
         with open(labelfile) as f:
             self.labels = [line.strip() for line in f.readlines()]
